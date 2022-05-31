@@ -1,1 +1,16 @@
+<summary>Basket icon don't show qantity of goods</summary>
+<project>someproject.com</project>
+<component>basket</component>
+<version>1.15.05.31<version>
+<severity>s4 minor</severity>
+<priority>p3 low<priority>
+<author>Bayusheva</author>
+<assigned>Ivanov</assigned>
+<steps_to_reproduse> 
+   <step_1>login as user</step_1>
+   <step_2>select some good using search box</step_2>
+   <step_3>press 'Add to basket' button"</step_3>  
+</steps_to_reproduse>               
+<actual_result>Basket icon don't change</actual_result>
+<expected_result>Basket icon shows quantity of added goods</expected_result>
 
