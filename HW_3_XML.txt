@@ -1,0 +1,81 @@
+XML
+ 1. Создать внешний репозиторий c названием XML.
+
+ 2. Клонировать репозиторий XML на локальный компьютер.
+git clone git@github.com:bayusheva-lyudmila/XML.git
+
+ 3. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+
+ 4. Добавить файл под гит.
+git add new.xml
+
+ 5. Закоммитить файл.
+git commit -m "created"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push 
+
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ 
+vim new.xml
+<surname>Bayusheva</surname>
+<name>Lyudmila</name>
+<age>36</age>
+<pet>2</pet>
+<salary>100</salary>
+
+ 8. Отправить изменения на внешний репозиторий.
+git add new.xml
+git commit -m "Something changed"
+git push
+
+ 9. Создать файл preferences.xml
+touch preferences.xml
+
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+<film>Dune</film>
+<serial>Breaking Bad</serial>
+<meal>steak</meal>
+<season>spring</season>
+<country>Georgia</country>
+
+11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+vim skills.xml
+<skill_1>Theory of testing</skill_1>
+<skill_2>Postman</skill_2>
+<skill_3>Linux therminal</skill_3>
+<skill_4>ADB</skill_4>
+
+ 12. Сделать коммит в одну строку.
+git add preferences.xml skills.xml&&git commit preferences.xml skills.xml -m "Files changed"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 14. На веб интерфейсе создать файл bug_report.xml.
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ 16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+<summary>Basket icon don't show qantity of goods</summary>
+<project>someproject.com</project>
+<component>basket</component>
+<version>1.15.05.31<version>
+<severity>s4 minor</severity>
+<priority>p3 low<priority>
+<author>Bayusheva</author>
+<assigned>Ivanov</assigned>
+<steps_to_reproduse> 
+   <step_1>login as user</step_1>
+   <step_2>select some good using search box</step_2>
+   <step_3>press 'Add to basket' button"</step_3>  
+</steps_to_reproduse>               
+<actual_result>Basket icon don't change</actual_result>
+<expected_result>Basket icon shows quantity of added goods</expected_result>
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий XML
+git pull
